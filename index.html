@@ -69,7 +69,7 @@
       <section class="hero-section centered">
         <div class="container flex">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn">Заказать услугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--specifics section-->
@@ -134,21 +134,31 @@
           <h2 class="heading">Чем мы занимаемся</h2>
           <ul class="position-list">
             <li class="pictures">
-              <img src="./img/box1.jpg" alt="человек печатает на клавиатуре" width="370" />
+              <div class="pictures-text">
+                <img src="./img/box1.jpg" alt="человек печатает на клавиатуре" width="370" />
+                <p class="pictures-name">Десктопные приложения</p>
+              </div>
             </li>
             <li class="pictures">
-              <img
-                src="./img/box2.jpg"
-                alt="человек держит в руках телефон на фоне открытого ноутбука"
-                width="370"
-              />
+              <div class="pictures-text">
+                <img
+                  src="./img/box2.jpg"
+                  alt="человек держит в руках телефон на фоне открытого ноутбука"
+                  width="370"
+                />
+                <p class="pictures-name">Мобильные приложения</p>
+              </div>
             </li>
+
             <li class="pictures">
-              <img
-                src="./img/box3.jpg"
-                alt="человек выбирает стилусом на планшете палитру цветов"
-                width="370"
-              />
+              <div class="pictures-text">
+                <img
+                  src="./img/box3.jpg"
+                  alt="человек выбирает стилусом на планшете палитру цветов"
+                  width="370"
+                />
+                <p class="pictures-name">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -421,5 +431,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-modal" data-modal-close>
+          <svg data-modal-close class="close-icon" widt="18" height="18">
+            <use href="./img/symbol-close.svg#icon-Vector-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
